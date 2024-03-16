@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: darkcyan;
+        }
+
+        p {
+            color: darkcyan;
+            font-size: xx-large;
+            
+        }
+
+        body {
+            background-color:lightblue;
+        }
+
+        div {
+            display: flex;
+        }
+
+        input {
+            font-size: xx-large;
+            color: darkcyan;
+            background-color: lightblue;
+            border-color: darkcyan;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1  >Random Phone Number Generator</h1>
+    <!--
+    <form action="Type in Number">
+       <div>
+        <p>Please Enter in Phone Number :</p> 
+        <input type="tel" minlength="10" maxlength="11" value="07">
+       </div>
+
+        <button id="done">
+            Click When Ready
+        </button>
+    -->
+
+       <div>
+            <p>This is Your New Random Number :</p>
+            <p>07</p>
+            <p id="random1"></p>
+            <p id="random2"></p>
+            <p id="random3"></p>
+            <p id="random4"></p>
+            <p id="random5"></p>
+            <p id="random6"></p>
+            <p id="random7"></p>
+            <p id="random8"></p>
+            <p id="random9"></p>
+
+       </div>
+       <p>
+        Please Refresh the Page to Get a New Number
+       </p>
+    </form>
+<script>
+document.getElementById("done").onclick = random()
+
+function random () {
+    ran1 =Math.floor(Math.random()*10)
+    document.getElementById("random1").innerHTML = ran1;
+
+    ran2 =Math.floor(Math.random()*10)
+    document.getElementById("random2").innerHTML = ran2;
+
+    ran3 =Math.floor(Math.random()*10)
+    document.getElementById("random3").innerHTML = ran3;
+
+    ran4 =Math.floor(Math.random()*10)
+    document.getElementById("random4").innerHTML = ran4;
+
+    ran5 =Math.floor(Math.random()*10)
+    document.getElementById("random5").innerHTML = ran5;
+
+    ran6 =Math.floor(Math.random()*10)
+    document.getElementById("random6").innerHTML = ran6;
+
+    ran7 =Math.floor(Math.random()*10)
+    document.getElementById("random7").innerHTML = ran7;
+
+    ran8 =Math.floor(Math.random()*10)
+    document.getElementById("random8").innerHTML = ran8;
+
+    ran9 =Math.floor(Math.random()*10)
+    document.getElementById("random9").innerHTML = ran9;
+}
+
+</script>
+</body>
+</html>
